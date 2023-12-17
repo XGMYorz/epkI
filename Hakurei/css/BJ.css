@@ -1,0 +1,206 @@
+/* 
+.ddiv{ 
+    background-color: rgb(167, 153, 172);
+    width: 650px;
+    margin: 0 auto;
+    padding-top: 20px;
+}  */
+.ddiv{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.IorII{
+    position: relative;
+    /* background: linear-gradient(to top left,rgb(17, 1, 33),rgb(121, 29, 157),rgb(79, 1, 110),rgb(95, 66, 107), rgb(189, 170, 195)); */
+    background: linear-gradient(125deg,#a899aec2,#6b4a79ac,#5b0b7ebf,#440e3fbc,#220026d0);
+    background-size: 500%;
+    animation: bgAnimation 8s linear infinite;
+
+    border-radius: 8px;
+    width: 600px;
+    /* height: 100vh; */
+    height: 530px;
+    margin-top: 140px;
+    z-index: 1;
+    box-shadow: 0px 0px 6px 1px rgb(37, 37, 37);
+}
+
+@keyframes bgAnimation{
+    0%{
+        background-position: 0% 50%;
+    }
+    
+    50%{
+        background-position: 100% 50% ;
+    }
+    100%{
+        background-position: 0% 50% ;  
+    }
+}
+
+.I{
+    width: 100%;
+    margin-top: 16px;
+    position: relative;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+     
+}
+.I .Ibj{
+    box-shadow: 0px 0px 35px 4px rgb(238, 238, 238);
+    background: transparent url(../img/98147610_p0.png) no-repeat center left;
+    background-size: 500px;
+    width:250px ;
+    height: 250px;
+    border: 6px solid rgba(240, 239, 239, 0.896);
+    border-radius: 50%;
+    /* position: absolute; */
+    z-index: 0;
+    transition: all 1s;
+}
+
+.I:hover  .Ibj{
+    box-shadow: 0px 0px 35px 4px rgb(93, 93, 93);
+    transform: perspective(400px) rotateY(-15deg);
+}
+.I:active .Ibj{
+    box-shadow: 0px 0px 35px 4px rgba(125, 30, 30, 0.774);
+    transform: perspective(400px) rotateY(15deg);
+}
+#tymt{
+    padding: auto;
+    margin-top: 30px;
+    height: 250px;
+    z-index: 0;
+}
+
+.II{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* height: 100vh; */
+    /* margin-top: -340px; */
+    margin-top: -27px;
+    z-index: 11;
+}
+.II ul li{
+    padding: 4px 4px;
+}
+
+.II ul li span{
+    margin-left: 33px;
+    font-size: 28px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 8px #150c0c;
+    /* 举例2px 角度45度 宽度为8px的阴影投射 */
+    transition: all 1s;
+    letter-spacing: 4px;
+}
+.II ul li span:hover{
+    margin-left: 12px;
+   letter-spacing: 13px;
+   color: rgba(235, 223, 253, 0.833);
+   /* 字符间距 */
+    width: 200px;
+    text-shadow: 2px 2px 18px #000000;
+
+}
+#II01,#II02{
+    font-size: 15px;
+    color:rgba(221, 205, 228, 0.786);
+    text-shadow: 2px 2px 4px #616161
+}
+#II01{
+    width: 200px;
+    height: 32px;
+    background-color: rgba(219, 186, 219, 0.349);
+    border: 3px solid rgba(255, 255, 255, 0.595);
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 1px #ffffff78;
+}
+
+#II01:hover{
+    background-color: rgba(255, 255, 255, 0.349);
+    border: 3px solid rgba(233, 160, 255, 0.595);
+}
+
+#II02{
+    width: 200px;
+    height: 32px;
+    background-color: rgba(211, 176, 211, 0.332);
+    border: 3px solid rgb(255, 255, 255,0.595);
+    border-radius: 20px;
+    box-shadow: 0px 0px 3px 1px rgba(255, 255, 255, 0.471);
+}
+#II02:hover{
+    background-color: rgba(255, 255, 255, 0.349);
+    border: 3px solid rgba(233, 160, 255, 0.595);
+}
+
+.IIbt{
+    position: absolute;
+    margin-left: 1px;
+    margin-top: 5px;
+    width: 200px;
+    height: 32px;
+    color: aliceblue;
+    font-size: 17px;
+    background-color: rgb(134, 19, 128);
+    border: 3px solid rgb(134, 19, 128);
+    border-radius: 4px;
+    transition: all 1.2s;
+    box-shadow: 0px 0px 8px 1px #2c2c2c78;
+}
+
+.IIbt:hover{
+    transition: all 0.75s;
+    margin-left: -2px;
+    width: 210px;
+    height: 34px;
+    color: rgb(183, 33, 209);
+    background-color: rgb(255, 255, 255);
+    border: 3px solid rgb(232, 190, 255);
+    border-radius: 10px;
+    font-weight: bold;
+    letter-spacing: 12px;
+    box-shadow: 0px 0px 5px 3px rgba(181, 181, 181, 0.636)
+}
+
+.IIbt:active{
+    transition: all 0.5s;
+    color: rgb(255, 255, 255);
+    background-color: rgb(26, 26, 26);
+    border: 5px solid rgb(213, 213, 213);
+    font-weight: bolder;
+}
+
+.IId{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.IId div{
+    margin-top: 50px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    width: 200px;
+}
+
+.Mesmer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+    margin-top: 24px;
+}
+
+/* .Mesmer a{
+    font-size: 20px;
+    color: white;
+} */
